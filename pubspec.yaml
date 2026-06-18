@@ -1,0 +1,32 @@
+name: tile_explorer
+description: "A 20-level triple match puzzle game."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/app_logo.png"
+  web:
+    generate: true
+    image_path: "assets/app_logo.png"
+    background_color: "#E1F5FE"
+    theme_color: "#2196F3"
